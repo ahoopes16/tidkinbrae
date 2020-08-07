@@ -6,7 +6,19 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Source Code Pro',
+            variants: ['600']
+          }
+        ]
+      }
+    }
+  ],
   siteMetadata: {
     title: 'Tidkinbrae'
   }
