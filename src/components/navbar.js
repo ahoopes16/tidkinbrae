@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 export default function Navbar() {
     return (
-        <div className='navbar'>
+        <div className='navbar slide-in-top'>
             <Link to='/about'>About Me</Link>
 
             <span className='navbar-divider'>\</span>
