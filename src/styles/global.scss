@@ -9,6 +9,9 @@ $secondary-color: #fca311;
 $tertiary-color: #e5e5e5;
 $primary-font: "Source Code Pro", Courier, "Lucida Sans Typewriter",
   "Lucida Typewriter", monospace;
+$full: 100%;
+$navbar-height: 8%;
+$content-height: 100% - $navbar-height;
 
 /**
  * ================================
@@ -16,13 +19,28 @@ $primary-font: "Source Code Pro", Courier, "Lucida Sans Typewriter",
  * ================================
  */
 
-html {
+html, body {
   background-color: $primary-color;
-  height: 100%;
+  height: $full;
+  font-family: $primary-font;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+    height: $full;
+}
+
+.navbar {
+    background-color: $tertiary-color;
+    height: $navbar-height;
+}
+
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $primary-font;
+  height: $content-height;
 }
 
 h1 {
