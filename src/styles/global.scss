@@ -19,21 +19,43 @@ $content-height: 100% - $navbar-height;
  * ================================
  */
 
-html, body {
+html,
+body {
   background-color: $primary-color;
   height: $full;
   font-family: $primary-font;
   padding: 0;
+  color: white;
   margin: 0;
 }
 
 div {
-    height: $full;
+  height: $full;
 }
 
 .navbar {
-    background-color: $tertiary-color;
-    height: $navbar-height;
+  background-color: $tertiary-color;
+  height: $navbar-height;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3em;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.navbar a:hover {
+  color: $secondary-color;
+}
+
+.navbar-divider {
+  color: $secondary-color;
+  font-size: 1.5em;
 }
 
 .content {
@@ -126,5 +148,40 @@ h1 {
     text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
       0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
       0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * Slide In Top
+ * ----------------------------------------
+ */
+.slide-in-top {
+  -webkit-animation: slide-in-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
