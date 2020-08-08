@@ -19,21 +19,35 @@ $content-height: 100% - $navbar-height;
  * ================================
  */
 
-html, body {
+html,
+body {
   background-color: $primary-color;
   height: $full;
   font-family: $primary-font;
   padding: 0;
+  color: white;
   margin: 0;
 }
 
 div {
-    height: $full;
+  height: $full;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+a:hover {
+  color: $secondary-color;
 }
 
 .navbar {
-    background-color: $tertiary-color;
-    height: $navbar-height;
+  background-color: $tertiary-color;
+  height: $navbar-height;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .content {
