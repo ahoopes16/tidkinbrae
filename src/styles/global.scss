@@ -1,15 +1,19 @@
+$primary-color: #114b5f;
+$secondary-color: #fca311;
+$primary-font: "Source Code Pro", Courier, "Lucida Sans Typewriter",
+  "Lucida Typewriter", monospace;
+
 html {
-  background-color: cornflowerblue;
+  background-color: $primary-color;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: $primary-font;
 }
 
 h1 {
-  color: aliceblue;
-  font-family: "Source Code Pro", Courier, "Lucida Sans Typewriter",
-    "Lucida Typewriter", monospace;
+  color: $secondary-color;
   font-size: 5em;
 }
 
