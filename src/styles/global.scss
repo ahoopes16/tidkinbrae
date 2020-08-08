@@ -1,15 +1,46 @@
+/**
+ * ================================
+ * VARIABLES
+ * ================================
+ */
+
 $primary-color: #114b5f;
 $secondary-color: #fca311;
+$tertiary-color: #e5e5e5;
 $primary-font: "Source Code Pro", Courier, "Lucida Sans Typewriter",
   "Lucida Typewriter", monospace;
+$full: 100%;
+$navbar-height: 8%;
+$content-height: 100% - $navbar-height;
 
-html {
+/**
+ * ================================
+ * STYLES
+ * ================================
+ */
+
+html, body {
   background-color: $primary-color;
-  height: 100%;
+  height: $full;
+  font-family: $primary-font;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+    height: $full;
+}
+
+.navbar {
+    background-color: $tertiary-color;
+    height: $navbar-height;
+}
+
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $primary-font;
+  height: $content-height;
 }
 
 h1 {
@@ -17,22 +48,22 @@ h1 {
   font-size: 5em;
 }
 
+/**
+ * ================================
+ * ANIMATIONS
+ * ================================
+ */
+
+/**
+ * ----------------------------------------
+ * Fade-In
+ * ----------------------------------------
+ */
 .fade-in {
   -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.pop-up {
-  -webkit-animation: text-pop-up-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    1s both;
-  animation: text-pop-up-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
-}
-
-/**
- * ----------------------------------------
- * animation fade-in
- * ----------------------------------------
- */
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
@@ -52,9 +83,15 @@ h1 {
 
 /**
  * ----------------------------------------
- * animation text-pop-up-top
+ * Text Pop-Up
  * ----------------------------------------
  */
+.pop-up {
+  -webkit-animation: text-pop-up-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    1s both;
+  animation: text-pop-up-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+
 @-webkit-keyframes text-pop-up-top {
   0% {
     -webkit-transform: translateY(0);
