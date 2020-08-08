@@ -33,21 +33,29 @@ div {
   height: $full;
 }
 
-a {
-  text-decoration: none;
-  color: $primary-color;
-}
-
-a:hover {
-  color: $secondary-color;
-}
-
 .navbar {
   background-color: $tertiary-color;
   height: $navbar-height;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.3em;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.navbar a:hover {
+  color: $secondary-color;
+}
+
+.navbar-divider {
+  color: $secondary-color;
+  font-size: 1.5em;
 }
 
 .content {
