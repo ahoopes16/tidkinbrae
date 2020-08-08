@@ -17,7 +17,8 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    'gatsby-plugin-sass'
   ],
   siteMetadata: {
     title: 'Tidkinbrae'
