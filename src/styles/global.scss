@@ -59,10 +59,21 @@ div {
 }
 
 .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 25% 75%;
   height: $content-height;
+}
+
+.contact-area {
+    grid-column: 1;
+}
+
+.content-page {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    background-color: $tertiary-color;
+    margin-top: 0.5%;
 }
 
 .not-found-content {
@@ -71,7 +82,7 @@ div {
 
 h1 {
   color: $secondary-color;
-  font-size: 5em;
+  font-size: 3em;
 }
 
 /**
