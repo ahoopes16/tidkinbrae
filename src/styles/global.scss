@@ -44,13 +44,22 @@ div {
   padding-right: 2%;
 }
 
-.navbar a {
-  text-decoration: none;
+.navbar a,
+.navbar a:link {
+  background-position-y: -0%;
+  background-image: linear-gradient($tertiary-color 50%, $secondary-color 50%);
+  transition: background-position-y 500ms ease;
+  background-size: auto 175%;
   color: $primary-color;
+  text-decoration: none;
 }
 
 .navbar a:hover {
-  color: $secondary-color;
+    background-position-y: 100%;
+}
+
+.navbar a:active {
+    background-image: linear-gradient($tertiary-color 50%, goldenrod 50%);
 }
 
 .navbar-divider {
@@ -65,19 +74,19 @@ div {
 }
 
 .contact-area {
-    grid-column: 1;
+  grid-column: 1;
 }
 
 .content-page {
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-    background-color: $tertiary-color;
-    margin-top: 0.5%;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  background-color: $tertiary-color;
+  margin-top: 0.5%;
 }
 
 .not-found-content {
-    display: block;
+  display: block;
 }
 
 h1 {
