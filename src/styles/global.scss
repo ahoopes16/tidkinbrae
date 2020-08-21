@@ -82,6 +82,14 @@ div {
 .contact-area {
   grid-column: 1 / 3;
   grid-row: 3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.self-portrait {
+  border-radius: 50%;
+  border: 5px solid $secondary-color;
 }
 
 .content-page {
