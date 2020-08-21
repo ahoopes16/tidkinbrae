@@ -70,7 +70,7 @@ div {
 .content {
   display: grid;
   grid-template-columns: 20% 2.5% minmax(max-content, 22%) auto;
-  grid-template-rows: 2.5% 5% 92.5%;
+  grid-template-rows: 2.5% 5% 91.5%;
   height: 92%;
 }
 
@@ -86,7 +86,7 @@ div {
   margin-top: 0.5%;
 }
 
-.title {
+.title-container {
   grid-column: 2 / 4;
   grid-row: 2;
   background-color: $secondary-color;
@@ -97,7 +97,7 @@ div {
   align-items: center;
 }
 
-h1 {
+.title {
   margin: 0;
 }
 
