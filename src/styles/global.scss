@@ -55,11 +55,16 @@ div {
 }
 
 .navbar a:hover {
-    background-position-y: 100%;
+    background-position-y: 110%;
 }
 
 .navbar a:active {
     background-image: linear-gradient($tertiary-color 50%, goldenrod 50%);
+}
+
+.navbar .selected a {
+  background-color: $secondary-color;
+  background-image: none;
 }
 
 .navbar-divider {
