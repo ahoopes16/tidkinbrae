@@ -3,6 +3,6 @@ import MainLayout from '../components/mainlayout'
 
 export default function Experience() {
     return (
-        <MainLayout title='Experience' />
+        <MainLayout title='Experience' selectedTab='experience' />
     )
 }

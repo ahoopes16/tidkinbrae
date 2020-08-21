@@ -3,6 +3,6 @@ import MainLayout from '../components/mainlayout'
 
 export default function Ambitions() {
     return (
-        <MainLayout title='Ambitions & Goals' />
+        <MainLayout title='Ambitions & Goals' selectedTab='ambitions' />
     )
 }
