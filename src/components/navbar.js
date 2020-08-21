@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-export default function Navbar() {
+export default function Navbar({ selectedTab }) {
     return (
         <div className='navbar'>
             <Link to='/about'>About</Link>
