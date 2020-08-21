@@ -3,6 +3,6 @@ import MainLayout from '../components/mainlayout'
 
 export default function Education() {
     return (
-        <MainLayout title='Education' />
+        <MainLayout title='Education' selectedTab='education' />
     )
 }

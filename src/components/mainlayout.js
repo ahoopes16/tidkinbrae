@@ -4,10 +4,10 @@ import ContactArea from './contactarea'
 import ContentPageLayout from './contentpagelayout'
 import Title from './title'
 
-export default function MainLayout({ title, children }) {
+export default function MainLayout({ title, selectedTab, children }) {
     return (
         <div>
-            <Navbar />
+            <Navbar selectedTab={selectedTab} />
             <div className='content'>
                 <ContactArea />
                 <Title>{title}</Title>
