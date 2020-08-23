@@ -1,8 +1,8 @@
 import React from 'react'
-import MainLayout from '../components/mainlayout'
+import MainLayout from '../components/layouts/mainlayout'
 
 export default function Home() {
   return (
-    <MainLayout title='Kevin "Alex" Hoopes' />
+    <MainLayout title='My Portfolio' />
   )
 }

@@ -19,6 +19,11 @@ $content-height: 100% - $navbar-height;
  * ================================
  */
 
+
+/**
+ * GENERAL
+ */
+
 html,
 body {
   background-color: $primary-color;
@@ -32,6 +37,10 @@ body {
 div {
   height: $full;
 }
+
+/**
+ * NAVBAR
+ */
 
 .navbar {
   background-color: $tertiary-color;
@@ -72,12 +81,9 @@ div {
   font-size: 1.5em;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 20% 2.5% minmax(max-content, 22%) auto;
-  grid-template-rows: 2.5% 5% 91.5%;
-  height: 92%;
-}
+/**
+ * CONTACT INFORMATION AREA
+ */
 
 .contact-area {
   grid-column: 1 / 3;
@@ -85,11 +91,65 @@ div {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  text-align: center;
+  height: 50%;
+  margin-top: -30%;
+}
+
+#name {
+  color: $tertiary-color;
+  font-size: 1.5em;
+}
+
+.contact-info-items {
+  text-align: left;
+}
+
+.contact-info-item {
+  color: $tertiary-color;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-top: 10%;
+  margin-bottom: 0;
+}
+
+.contact-info-item:hover {
+  color: $secondary-color;
+}
+
+.contact-info-item:active {
+  color: goldenrod;
+}
+
+.icon {
+  margin-right: 8px;
+  color: $secondary-color;
+  font-size: 1.2em;
 }
 
 .self-portrait {
   border-radius: 50%;
   border: 5px solid $secondary-color;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 3%;
+}
+
+/**
+ * CONTENT AREA
+ */
+
+.content {
+  display: grid;
+  grid-template-columns: 20% 2.5% minmax(max-content, 22%) auto;
+  grid-template-rows: 2.5% 5% 91.5%;
+  height: 92%;
 }
 
 .content-page {
