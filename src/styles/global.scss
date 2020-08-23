@@ -19,6 +19,11 @@ $content-height: 100% - $navbar-height;
  * ================================
  */
 
+
+/**
+ * GENERAL
+ */
+
 html,
 body {
   background-color: $primary-color;
@@ -32,6 +37,10 @@ body {
 div {
   height: $full;
 }
+
+/**
+ * NAVBAR
+ */
 
 .navbar {
   background-color: $tertiary-color;
@@ -72,12 +81,9 @@ div {
   font-size: 1.5em;
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 20% 2.5% minmax(max-content, 22%) auto;
-  grid-template-rows: 2.5% 5% 91.5%;
-  height: 92%;
-}
+/**
+ * CONTACT INFORMATION AREA
+ */
 
 .contact-area {
   grid-column: 1 / 3;
@@ -133,6 +139,17 @@ div {
 .break {
   flex-basis: 100%;
   height: 3%;
+}
+
+/**
+ * CONTENT AREA
+ */
+
+.content {
+  display: grid;
+  grid-template-columns: 20% 2.5% minmax(max-content, 22%) auto;
+  grid-template-rows: 2.5% 5% 91.5%;
+  height: 92%;
 }
 
 .content-page {
