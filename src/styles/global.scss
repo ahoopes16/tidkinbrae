@@ -19,7 +19,6 @@ $content-height: 100% - $navbar-height;
  * ================================
  */
 
-
 /**
  * GENERAL
  */
@@ -64,16 +63,22 @@ div {
 }
 
 .navbar a:hover {
-    background-position-y: 110%;
+  background-position-y: 110%;
 }
 
 .navbar a:active {
-    background-image: linear-gradient($tertiary-color 50%, goldenrod 50%);
+  background-image: linear-gradient($tertiary-color 50%, goldenrod 50%);
 }
 
 .navbar .selected a {
   background-color: $secondary-color;
   background-image: none;
+}
+
+.navbar .selected:active {
+  -webkit-animation: shake-horizontal 0.4s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-horizontal 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 .navbar-divider {
