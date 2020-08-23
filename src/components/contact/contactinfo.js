@@ -12,27 +12,27 @@ export default function ContactInfo() {
 
       <div className='contact-info-items'>
         <ContactInfoItem
-          icon={faEnvelope}
-          link='mailto:kevin.alex.hoopes@gmail.com'
           text='kevin.alex.hoopes@gmail.com'
+          link='mailto:kevin.alex.hoopes@gmail.com'
+          icon={faEnvelope}
         />
 
         <ContactInfoItem
-          icon={faPhoneAlt}
-          link='tel:4172935107'
           text='(417)-293-5107'
+          link='tel:4172935107'
+          icon={faPhoneAlt}
         />
 
         <ContactInfoItem
-          icon={faGithubAlt}
-          link='https://github.com/ahoopes16'
           text='GitHub Profile'
+          link='https://github.com/ahoopes16'
+          icon={faGithubAlt}
         />
 
         <ContactInfoItem
-          icon={faStackOverflow}
-          link='https://stackoverflow.com/users/14123656/kevin-hoopes'
           text='StackOverflow Profile'
+          link='https://stackoverflow.com/users/14123656/kevin-hoopes'
+          icon={faStackOverflow}
         />
       </div>
     </div>
