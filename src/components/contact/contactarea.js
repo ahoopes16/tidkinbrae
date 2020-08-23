@@ -15,19 +15,19 @@ export default function ContactArea() {
 
         <div className='contact-info-items'>
           <FontAwesomeIcon className='icon' icon={faEnvelope} />
-          <a href='mailto:kevin.alex.hoopes@gmail.com' className='contact-info-item'>kevin.alex.hoopes@gmail.com</a>
+          <a target='_blank' href='mailto:kevin.alex.hoopes@gmail.com' className='contact-info-item'>kevin.alex.hoopes@gmail.com</a>
           <div className='break'></div>
 
           <FontAwesomeIcon className='icon' icon={faPhoneAlt} />
-          <a href='tel:4172935107' className='contact-info-item'>(417)-293-5107</a>
+          <a target='_blank' href='tel:4172935107' className='contact-info-item'>(417)-293-5107</a>
           <div className='break'></div>
 
           <FontAwesomeIcon className='icon' icon={faGithubAlt} />
-          <a href='https://github.com/ahoopes16' className='contact-info-item'>GitHub Profile</a>
+          <a target='_blank' href='https://github.com/ahoopes16' className='contact-info-item'>GitHub Profile</a>
           <div className='break'></div>
 
           <FontAwesomeIcon className='icon' icon={faStackOverflow} />
-          <a href='https://stackoverflow.com/users/14123656/kevin-hoopes' className='contact-info-item'>Stack Overflow Profile</a>
+          <a target='_blank' href='https://stackoverflow.com/users/14123656/kevin-hoopes' className='contact-info-item'>StackOverflow Profile</a>
         </div>
       </div>
     </div>

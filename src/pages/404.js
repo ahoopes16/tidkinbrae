@@ -1,5 +1,5 @@
 import React from 'react'
-import MainLayout from '../components/mainlayout'
+import MainLayout from '../components/layouts/mainlayout'
 
 export default function NotFound() {
     return (

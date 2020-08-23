@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from './navbar'
-import ContactArea from './contactarea'
+import Navbar from '../navbar'
+import ContactArea from '../contact/contactarea'
 import ContentPageLayout from './contentpagelayout'
-import Title from './title'
+import Title from '../title'
 
 export default function MainLayout({ title, selectedTab, children }) {
     return (
