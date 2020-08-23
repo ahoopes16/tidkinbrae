@@ -5,7 +5,12 @@ export default function ContactInfoItem({ icon, link, text }) {
     return (
         <Fragment>
             <FontAwesomeIcon className='icon' icon={icon} />
-            <a target='_blank' href={link} className='contact-info-item'>
+            <a
+                className='contact-info-item'
+                href={link}
+                target='_blank'
+                rel='noreferrer'
+            >
                 {text}
             </a>
             <div className='break'></div>
